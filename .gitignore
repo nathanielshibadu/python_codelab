@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+.idea/
+venv/
+data/*.xlsx  # Optionally ignore Excel files except for initial data
