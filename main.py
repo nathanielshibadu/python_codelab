@@ -1,16 +1,22 @@
 import logging
 import os
 import pandas as pd
-from functions import read_student_data, generate_emails_for_students, generate_gender_lists, find_special_characters
+from functions import (
+    read_student_data,
+    generate_emails_for_students,
+    generate_gender_lists,
+    find_special_characters,
+    name_similarity_analysis
+)
 
-# Ensure the 'logs' directory exists
-log_directory = 'logs'
-if not os.path.exists(log_directory):
-    os.makedirs(log_directory)
+# Ensure the 'logs' and 'data' directories exist
+for directory in ['logs', 'data']:
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
 # Set up logging
 logging.basicConfig(
-    filename=os.path.join(log_directory, 'computations.log'),
+    filename=os.path.join('logs', 'computations.log'),
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
@@ -29,17 +35,35 @@ def main():
         logging.error(f"Error reading student data: {e}")
         return
 
-    # Step 2: Generate email addresses for both sheets
+    combined_df = pd.DataFrame()  # Initialize an empty DataFrame for combined data
+
+    # Step 2: Process each sheet separately
     for sheet_name, df in [("File_A", df_file_a), ("File_B", df_file_b)]:
-        logging.info(f"Generating email addresses for students in {sheet_name} sheet.")
+        logging.info(f"Processing {sheet_name} sheet.")
         try:
+            # Generate email addresses
             df_with_emails = generate_emails_for_students(df)
             logging.info(f"Successfully generated email addresses for students in {sheet_name}.")
 
             # Generate separate lists of Male and Female students
             male_students, female_students = generate_gender_lists(df_with_emails)
+
+            # Save separate lists of Male and Female students
+            male_list_path = f'data/Male_Students_{sheet_name}.txt'
+            female_list_path = f'data/Female_Students_{sheet_name}.txt'
+
+            with open(male_list_path, 'w') as f:
+                for student in male_students:
+                    f.write(f"{student}\n")
+
+            with open(female_list_path, 'w') as f:
+                for student in female_students:
+                    f.write(f"{student}\n")
+
             logging.info(f"{sheet_name}: Number of male students: {len(male_students)}")
             logging.info(f"{sheet_name}: Number of female students: {len(female_students)}")
+            logging.info(f"Male students list saved to {male_list_path}")
+            logging.info(f"Female students list saved to {female_list_path}")
 
             # Find students with special characters in their names
             special_char_students = find_special_characters(df_with_emails)
@@ -56,10 +80,22 @@ def main():
 
             logging.info(f"Data for {sheet_name} saved in Excel, CSV, and TSV formats.")
 
+            # Append the processed data to the combined DataFrame
+            combined_df = pd.concat([combined_df, df_with_emails], ignore_index=True)
+
         except Exception as e:
             logging.error(f"Error processing {sheet_name}: {e}")
 
-    print("Processing complete. Check the logs for details.")
+    # Perform name similarity analysis on the combined data
+    logging.info("Performing name similarity analysis.")
+    try:
+        similarity_results = name_similarity_analysis(combined_df)
+        logging.info(f"Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.")
+        logging.info(f"Number of name pairs with similarity >= 50%: {len(similarity_results)}")
+    except Exception as e:
+        logging.error(f"Error during name similarity analysis: {e}")
+
+    print("Processing complete. Check the logs and output files in the 'data' directory for details.")
 
 
 if __name__ == "__main__":
