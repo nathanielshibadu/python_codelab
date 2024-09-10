@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612f4f02-81e5-4fbb-96e9-c065e164d30b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_codelab.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Student_Emails.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Student_Emails.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/computations.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/computations.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
 }</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_codelab" />
+      <module name="codelab4" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +98,10 @@
       <updated>1725910022101</updated>
       <workItem from="1725910029682" duration="1639000" />
       <workItem from="1725915132746" duration="3541000" />
-      <workItem from="1725919021945" duration="305000" />
+      <workItem from="1725919021945" duration="1078000" />
+      <workItem from="1725953162013" duration="1668000" />
+      <workItem from="1725956867027" duration="58000" />
+      <workItem from="1725957000192" duration="2359000" />
     </task>
     <servers />
   </component>
@@ -114,6 +120,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_codelab$main.coverage" NAME="main Coverage Results" MODIFIED="1725916866401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_codelab$main.coverage" NAME="main Coverage Results" MODIFIED="1725920250978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/python_codelab.iml" filepath="$PROJECT_DIR$/.idea/python_codelab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/codelab4.iml" filepath="$PROJECT_DIR$/.idea/codelab4.iml" />
     </modules>
   </component>
 </project>
