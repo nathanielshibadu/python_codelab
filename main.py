@@ -19,43 +19,60 @@ def main():
     # File path for the input Excel file
     file_path = 'data/Test Files.xlsx'
 
-    # Step 1: Read the data
+    # Step 1: Read the data from Excel file
     logging.info("Reading student data from Excel file.")
     try:
-        df = read_student_data(file_path)
-        logging.info("Successfully read student data.")
+        # Read data separately from both sheets
+        df_file_a, df_file_b = read_student_data(file_path)
+        logging.info("Successfully read student data from File_A and File_B sheets.")
     except Exception as e:
         logging.error(f"Error reading student data: {e}")
         return
 
-    # Step 2: Generate email addresses
-    logging.info("Generating email addresses for students.")
+    # Step 2: Generate email addresses for File_A sheet
+    logging.info("Generating email addresses for students in File_A sheet.")
     try:
-        df_with_emails = generate_emails_for_students(df)
-        logging.info("Successfully generated email addresses for students.")
+        df_file_a_with_emails = generate_emails_for_students(df_file_a)
+        logging.info("Successfully generated email addresses for students in File_A.")
     except Exception as e:
-        logging.error(f"Error generating email addresses: {e}")
+        logging.error(f"Error generating email addresses for File_A: {e}")
         return
 
-    # Step 3: Save the updated data to a new Excel file
-    output_file_path = 'data/Student_Emails.xlsx'
+    # Step 3: Generate email addresses for File_B sheet
+    logging.info("Generating email addresses for students in File_B sheet.")
     try:
-        df_with_emails.to_excel(output_file_path, index=False)
-        logging.info(f"Emails generated and saved to {output_file_path}.")
+        df_file_b_with_emails = generate_emails_for_students(df_file_b)
+        logging.info("Successfully generated email addresses for students in File_B.")
     except Exception as e:
-        logging.error(f"Error saving data to Excel file: {e}")
+        logging.error(f"Error generating email addresses for File_B: {e}")
         return
 
-    # Step 4: Save files to TSV and CSV formats
-    csv_output_path = 'data/Student_Emails.csv'
-    tsv_output_path = 'data/Student_Emails.tsv'
+    # Step 4: Save the updated data to new Excel files
+    output_file_a_path = 'data/Student_Emails_File_A.xlsx'
+    output_file_b_path = 'data/Student_Emails_File_B.xlsx'
 
     try:
-        logging.info(f"Saving data to CSV format at {csv_output_path}.")
-        df_with_emails.to_csv(csv_output_path, index=False)
+        df_file_a_with_emails.to_excel(output_file_a_path, index=False)
+        df_file_b_with_emails.to_excel(output_file_b_path, index=False)
+        logging.info(f"Emails generated and saved to {output_file_a_path} and {output_file_b_path}.")
+    except Exception as e:
+        logging.error(f"Error saving data to Excel files: {e}")
+        return
 
-        logging.info(f"Saving data to TSV format at {tsv_output_path}.")
-        df_with_emails.to_csv(tsv_output_path, sep='\t', index=False)
+    # Step 5: Save files to TSV and CSV formats
+    csv_output_path_a = 'data/Student_Emails_File_A.csv'
+    tsv_output_path_a = 'data/Student_Emails_File_A.tsv'
+    csv_output_path_b = 'data/Student_Emails_File_B.csv'
+    tsv_output_path_b = 'data/Student_Emails_File_B.tsv'
+
+    try:
+        logging.info(f"Saving data to CSV format at {csv_output_path_a} and {csv_output_path_b}.")
+        df_file_a_with_emails.to_csv(csv_output_path_a, index=False)
+        df_file_b_with_emails.to_csv(csv_output_path_b, index=False)
+
+        logging.info(f"Saving data to TSV format at {tsv_output_path_a} and {tsv_output_path_b}.")
+        df_file_a_with_emails.to_csv(tsv_output_path_a, sep='\t', index=False)
+        df_file_b_with_emails.to_csv(tsv_output_path_b, sep='\t', index=False)
 
         logging.info("Data successfully saved in TSV and CSV formats.")
         print("Data saved in TSV and CSV formats.")

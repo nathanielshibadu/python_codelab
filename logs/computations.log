@@ -57,3 +57,13 @@
 2024-09-10 11:17:17,852 - INFO - Saving data to TSV format at data/Student_Emails.tsv.
 2024-09-10 11:17:17,854 - INFO - Data successfully saved in TSV and CSV formats.
 >>>>>>> 7becd908aca4ab91212bf2ee0ac434ed5bc43805
+2024-09-10 12:50:06,254 - INFO - Reading student data from Excel file.
+2024-09-10 12:50:07,400 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 12:50:07,400 - INFO - Generating email addresses for students in File_A sheet.
+2024-09-10 12:50:07,405 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 12:50:07,405 - INFO - Generating email addresses for students in File_B sheet.
+2024-09-10 12:50:07,405 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 12:50:07,480 - INFO - Emails generated and saved to data/Student_Emails_File_A.xlsx and data/Student_Emails_File_B.xlsx.
+2024-09-10 12:50:07,480 - INFO - Saving data to CSV format at data/Student_Emails_File_A.csv and data/Student_Emails_File_B.csv.
+2024-09-10 12:50:07,502 - INFO - Saving data to TSV format at data/Student_Emails_File_A.tsv and data/Student_Emails_File_B.tsv.
+2024-09-10 12:50:07,505 - INFO - Data successfully saved in TSV and CSV formats.
