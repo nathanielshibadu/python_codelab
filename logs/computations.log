@@ -238,3 +238,36 @@
 2024-09-10 15:40:25,429 - INFO - Load pretrained SentenceTransformer: LaBSE
 2024-09-10 15:40:39,384 - INFO - Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.
 2024-09-10 15:40:39,384 - INFO - Number of name pairs with similarity >= 50%: 293
+2024-09-10 15:50:35,514 - INFO - Reading student data from Excel file.
+2024-09-10 15:50:37,131 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 15:50:37,131 - INFO - Processing File_A sheet.
+2024-09-10 15:50:37,286 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 15:50:37,301 - INFO - File_A: Number of male students: 40
+2024-09-10 15:50:37,301 - INFO - File_A: Number of female students: 24
+2024-09-10 15:50:37,301 - INFO - Male students list saved to data/Male_Students_File_A.txt
+2024-09-10 15:50:37,301 - INFO - Female students list saved to data/Female_Students_File_A.txt
+2024-09-10 15:50:37,305 - INFO - File_A: Students with special characters in their names: ['Abwoga, Adrian Jared Paul', "Akong'o, Shanelle Hilda Anyango", "Ang'edu, Jude Ocomil", 'Arunga, Kyla Neema', 'Atenya, Anthony Magunga Ikobwa', 'Budembeshe, Moses Kasuni', 'Dessalegn, Kalid Geleta', 'Epetet, Keith Lokwei', 'Ger, David Otieno', 'Githinji, Don Moses Thigiti', 'Haji, Ashir Ali', 'Hassan, Fardowsa Abduhakim', 'Ismail, Ruweida Ali', 'Johnson, Myles Adebayo', 'Kamau, Ann Mumbi', 'Kangethe, Sharon Wanjiru', 'Karanu, Neema Muthoni', 'Kiarie, Samuel Ndungu', 'Kihara, Shannon Kendi', 'Kimutai, Peter Kibet', 'Kinyua, Victor Mfana', 'Kirema, Ian Muteithia', 'Kithae, Eric Muriithi', 'Korir, Kevin Kimutai', 'Kwoba, Alex Wafula', 'Maritim, Kelvin Kipngeno', 'Masaka, Zivai Takadiwa David', 'Mohamed, Ally Mahamud', 'Morekwa, David Nyamongo', 'Mugambi, Kelvin Karani', 'Muhia, Victor Mwaura', 'Muiyuro, Natasha Waithira', 'Muli, Grace Kanini', 'Muroki, Mark Gichuhi', 'Mutaki, Ruby Mbete', 'Mutua, Franklin Karanja', 'Mutunga, Eric Kiamba', 'Mutunga, Patience Kamanthe', 'Mwanda, George Josiah', 'Nabaala, Andrew Kasaine', 'Naibei, Monicah', 'Ndambiri, Yvonne Nyambura', 'Ndungu, Sarah Laura Wangari', "Ng'ang'a, Ian Mutuge", 'Ngeno, Alvin Kipkurui', 'Ngigi, Michael Macharia', 'Njuguna, Elizabeth Njoki', 'Nugi, Andrew Kiarie', 'Nyambura, Erica', 'Nzioki, Maureen Mutete', 'Ochanda, Steven Joel Jona', 'Ogutu, Brenda Mary Anyango', 'Ombeni, Mwenzangu Faraja', 'Ombongi, Caleb Magare', "Orony, Charis Ng'wono", 'Owens, Nicole Owens', 'Patel, Jay Hirji', 'Tonui, Martin', 'Tum, Bramwel Kipchirchir', 'Wachira, Joy Muthoni', 'Wakaba, Rosemary Njeri', 'Wanjao, Louis Mbugua', "Waweru, Monika Ng'endo", 'Waweru, Trevor Kariuki']
+2024-09-10 15:50:37,539 - INFO - Data for File_A saved in Excel, CSV, and TSV formats.
+2024-09-10 15:50:52,194 - INFO - "GET /?state=0dZOyyO1qfNTsJSUacrcS0jvOL3ZAr&code=4/0AQlEd8z8z2wObF_1TZmHwk-TDqwrjZfKdwA6qpPFGb8WEDToT6ET4NC8KSNnY5HY9Xpbjg&scope=https://www.googleapis.com/auth/drive.file HTTP/1.1" 200 65
+2024-09-10 15:50:52,792 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-10 15:50:55,908 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-10 15:50:58,440 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-10 15:51:01,997 - INFO - Files for File_A uploaded to Google Drive.
+2024-09-10 15:51:01,998 - INFO - Processing File_B sheet.
+2024-09-10 15:51:02,000 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 15:51:02,004 - INFO - File_B: Number of male students: 35
+2024-09-10 15:51:02,004 - INFO - File_B: Number of female students: 24
+2024-09-10 15:51:02,004 - INFO - Male students list saved to data/Male_Students_File_B.txt
+2024-09-10 15:51:02,004 - INFO - Female students list saved to data/Female_Students_File_B.txt
+2024-09-10 15:51:02,006 - INFO - File_B: Students with special characters in their names: ['Adhiambo, Jane Daisy', 'Ali, Sumeiya Abdulle Abdirizak', 'Asava, Wayne Majani', 'Barasa, Michelle Nekesa', 'Bigingi, Ian Duncan', 'Cheboi, Lormotum Noel', 'Dulo, Humphrey James', 'Etemesi, Caleb Asira', 'Frances, Ayango', 'Gitau, Sandra Wanjiru', 'Hassan, Masoud Ali', 'Kabui, Michelle Miceere', 'Kamau, Edinah Nyambura', 'Kamau, Jesse Mbugua', 'Karani, Amanda Ngendo', 'Kathurima, Ryan Kinoti', 'Kennedy, Angel Venoliah', 'Kiilu, Jeff Kioko', 'Kiiru, Cynthia Everlyn Muthoni', 'Kimani, Alex Mwangi', 'Kinegeni, Terry', 'Kyalo, Felicia Mutheu', 'Leting, Sylvester Kiplagat', 'Lihanda, Glen Musa', 'Mahia, Jerome Kamau', "Mbugua, Nathan Ng'ethe", 'Mbwanga, Emmanuel Chivunira', 'Moire, Henry Nyakundi', 'Morara, Keith Matwere', 'Muchiri, Lynn Wairimu', 'Mugendi, Emmanuel Muthomi', 'Mukiri, Maryanne Wanjiku', 'Mungai, Kihanya', 'Musyoka, Brian Kioko', 'Mutende, Arabella Fanisheba', 'Mutinda, Bryan Lwaya', 'Mwago, Megan Dette', 'Mwai, David King', 'Nalugala, Venessa Chebukwa', 'Ndirangu, Denise Nyambura', 'Ngahu, David Gitonga', 'Ngari, Sifa Gathoni', 'Nguthiru, Edwin Ndiritu', 'Nyamosi, Edmond Omwega', "Nyang'or, Olive Menorah", 'Omal, Warren', 'Omondi, Emmanuel Neville', 'Omondi, Winfred Achieng', 'Otao, Davis Mokora', 'Rintaugu, Mugambi Nteere', 'Rotich, Mercy Chepngetich', 'Sehmi, Singh Jeevan', 'Vasani, Aman Upinkumar', 'Wafula, Gideon Simiyu', 'Wahu, Bridget Makena', 'Wango, Michael Mundati', 'Wangombe, Martin Mwangi', 'Wanyonyi, Brian Newton', 'Wasike, Nicole Jones Nekesa']
+2024-09-10 15:51:02,055 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
+2024-09-10 15:51:02,060 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-10 15:51:04,427 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-10 15:51:06,994 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-10 15:51:09,327 - INFO - Files for File_B uploaded to Google Drive.
+2024-09-10 15:51:09,334 - INFO - Performing name similarity analysis.
+2024-09-10 15:51:09,372 - INFO - Use pytorch device_name: cpu
+2024-09-10 15:51:09,372 - INFO - Load pretrained SentenceTransformer: LaBSE
+2024-09-10 15:51:33,207 - INFO - Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.
+2024-09-10 15:51:33,207 - INFO - Number of name pairs with similarity >= 50%: 293
+2024-09-10 15:51:33,234 - INFO - file_cache is only supported with oauth2client<4.0.0

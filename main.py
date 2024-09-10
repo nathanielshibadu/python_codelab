@@ -7,8 +7,7 @@ from functions import (
     generate_gender_lists,
     find_special_characters,
     name_similarity_analysis,
-    save_to_json,
-    save_to_jsonl
+    upload_file_to_drive
 )
 
 # Ensure the 'logs' and 'data' directories exist
@@ -81,6 +80,13 @@ def main():
 
             logging.info(f"Data for {sheet_name} saved in Excel, CSV, and TSV formats.")
 
+            # Upload files to Google Drive
+            upload_file_to_drive(f'Student_Emails_{sheet_name}.xlsx', output_excel_path, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+            upload_file_to_drive(f'Student_Emails_{sheet_name}.csv', output_csv_path, 'text/csv')
+            upload_file_to_drive(f'Student_Emails_{sheet_name}.tsv', output_tsv_path, 'text/tab-separated-values')
+
+            logging.info(f"Files for {sheet_name} uploaded to Google Drive.")
+
             # Append the processed data to the combined DataFrame
             combined_df = pd.concat([combined_df, df_with_emails], ignore_index=True)
 
@@ -93,18 +99,15 @@ def main():
         similarity_results = name_similarity_analysis(combined_df)
         logging.info(f"Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.")
         logging.info(f"Number of name pairs with similarity >= 50%: {len(similarity_results)}")
+
+        # Upload similarity results to Google Drive
+        upload_file_to_drive('name_similarity_results.json', 'data/name_similarity_results.json', 'application/json')
+
     except Exception as e:
         logging.error(f"Error during name similarity analysis: {e}")
-        return
-
-    # Save combined data to JSON and JSONL formats
-    json_output_path = 'data/Combined_Student_Data.json'
-    jsonl_output_path = 'data/Combined_Student_Data.jsonl'
-
-    save_to_json(combined_df, json_output_path)
-    save_to_jsonl(combined_df, jsonl_output_path, similarity_results)
 
     print("Processing complete. Check the logs and output files in the 'data' directory for details.")
+
 
 if __name__ == "__main__":
     main()
