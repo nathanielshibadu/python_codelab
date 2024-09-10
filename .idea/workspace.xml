@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612f4f02-81e5-4fbb-96e9-c065e164d30b" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/python_codelab.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Data/Student_Emails.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Student_Emails.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Student_Emails.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Student_Emails.tsv" afterDir="false" />
+>>>>>>> 7becd908aca4ab91212bf2ee0ac434ed5bc43805
       <change beforePath="$PROJECT_DIR$/Data/Student_Emails.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Student_Emails.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/computations.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/computations.log" afterDir="false" />
     </list>
@@ -120,6 +125,11 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/python_codelab$main.coverage" NAME="main Coverage Results" MODIFIED="1725920250978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+    <SUITE FILE_PATH="coverage/python_codelab$main.coverage" NAME="main Coverage Results" MODIFIED="1725956235652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_codelab$functions.coverage" NAME="functions Coverage Results" MODIFIED="1725954771292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> 7becd908aca4ab91212bf2ee0ac434ed5bc43805
   </component>
 </project>

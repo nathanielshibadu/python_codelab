@@ -3,8 +3,17 @@ import re
 
 # Function to read student data from an Excel file
 def read_student_data(file_path):
-    df = pd.read_excel(file_path)
-    return df
+    # Load both File_A and File_B sheets into a dictionary of DataFrames
+    sheet_dict = pd.read_excel(file_path, sheet_name=['File_A', 'File_B'])
+
+    # Access both sheets by their names 'File_A' and 'File_B'
+    df_part_a = sheet_dict['File_A']
+    df_part_b = sheet_dict['File_B']
+
+    # Optionally: Combine both sheets into one DataFrame
+    df_combined = pd.concat([df_part_a, df_part_b])
+
+    return df_combined
 
 # Function to generate email address based on student name
 def generate_email(name, existing_emails):
