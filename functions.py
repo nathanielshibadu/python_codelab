@@ -3,17 +3,16 @@ import re
 
 # Function to read student data from an Excel file
 def read_student_data(file_path):
-    # Load both File_A and File_B sheets into a dictionary of DataFrames
-    sheet_dict = pd.read_excel(file_path, sheet_name=['File_A', 'File_B'])
-
-    # Access both sheets by their names 'File_A' and 'File_B'
-    df_part_a = sheet_dict['File_A']
-    df_part_b = sheet_dict['File_B']
-
-    # Optionally: Combine both sheets into one DataFrame
-    df_combined = pd.concat([df_part_a, df_part_b])
-
-    return df_combined
+    try:
+        # Load both File_A and File_B sheets into a dictionary of DataFrames
+        sheet_dict = pd.read_excel(file_path, sheet_name=['File_A', 'File_B'])
+        # Access both sheets by their names 'File_A' and 'File_B'
+        df_file_a = sheet_dict['File_A']
+        df_file_b = sheet_dict['File_B']
+        # Return both DataFrames separately
+        return df_file_a, df_file_b
+    except Exception as e:
+        raise FileNotFoundError(f"Error reading Excel file: {e}")
 
 # Function to generate email address based on student name
 def generate_email(name, existing_emails):
@@ -38,7 +37,7 @@ def generate_email(name, existing_emails):
     existing_emails.add(email)
     return email
 
-# Function to generate emails for all students
+# Function to generate emails for all students in a DataFrame
 def generate_emails_for_students(df):
     existing_emails = set()
     df['email'] = df["Student Name"].apply(lambda name: generate_email(name, existing_emails))
