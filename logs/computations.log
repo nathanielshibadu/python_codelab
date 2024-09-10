@@ -67,3 +67,41 @@
 2024-09-10 12:50:07,480 - INFO - Saving data to CSV format at data/Student_Emails_File_A.csv and data/Student_Emails_File_B.csv.
 2024-09-10 12:50:07,502 - INFO - Saving data to TSV format at data/Student_Emails_File_A.tsv and data/Student_Emails_File_B.tsv.
 2024-09-10 12:50:07,505 - INFO - Data successfully saved in TSV and CSV formats.
+2024-09-10 13:35:10,428 - INFO - Reading student data from Excel file.
+2024-09-10 13:35:11,810 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 13:35:11,810 - INFO - Generating email addresses for students in File_A sheet.
+2024-09-10 13:35:11,822 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 13:35:11,822 - INFO - Generating email addresses for students in File_B sheet.
+2024-09-10 13:35:11,823 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 13:35:11,997 - INFO - Emails generated and saved to data/Student_Emails_File_A.xlsx and data/Student_Emails_File_B.xlsx.
+2024-09-10 13:35:11,997 - INFO - Saving data to CSV format at data/Student_Emails_File_A.csv and data/Student_Emails_File_B.csv.
+2024-09-10 13:35:12,006 - INFO - Saving data to TSV format at data/Student_Emails_File_A.tsv and data/Student_Emails_File_B.tsv.
+2024-09-10 13:35:12,009 - INFO - Data successfully saved in TSV and CSV formats.
+2024-09-10 14:05:30,774 - INFO - Reading student data from Excel file.
+2024-09-10 14:05:32,009 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 14:05:32,009 - INFO - Generating email addresses for students in File_A sheet.
+2024-09-10 14:05:32,011 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 14:05:32,015 - INFO - File_A: Number of male students: 40
+2024-09-10 14:05:32,015 - INFO - File_A: Number of female students: 24
+2024-09-10 14:05:32,017 - INFO - File_A: Students with special characters in their names: ['Abwoga, Adrian Jared Paul', "Akong'o, Shanelle Hilda Anyango", "Ang'edu, Jude Ocomil", 'Arunga, Kyla Neema', 'Atenya, Anthony Magunga Ikobwa', 'Budembeshe, Moses Kasuni', 'Dessalegn, Kalid Geleta', 'Epetet, Keith Lokwei', 'Ger, David Otieno', 'Githinji, Don Moses Thigiti', 'Haji, Ashir Ali', 'Hassan, Fardowsa Abduhakim', 'Ismail, Ruweida Ali', 'Johnson, Myles Adebayo', 'Kamau, Ann Mumbi', 'Kangethe, Sharon Wanjiru', 'Karanu, Neema Muthoni', 'Kiarie, Samuel Ndungu', 'Kihara, Shannon Kendi', 'Kimutai, Peter Kibet', 'Kinyua, Victor Mfana', 'Kirema, Ian Muteithia', 'Kithae, Eric Muriithi', 'Korir, Kevin Kimutai', 'Kwoba, Alex Wafula', 'Maritim, Kelvin Kipngeno', 'Masaka, Zivai Takadiwa David', 'Mohamed, Ally Mahamud', 'Morekwa, David Nyamongo', 'Mugambi, Kelvin Karani', 'Muhia, Victor Mwaura', 'Muiyuro, Natasha Waithira', 'Muli, Grace Kanini', 'Muroki, Mark Gichuhi', 'Mutaki, Ruby Mbete', 'Mutua, Franklin Karanja', 'Mutunga, Eric Kiamba', 'Mutunga, Patience Kamanthe', 'Mwanda, George Josiah', 'Nabaala, Andrew Kasaine', 'Naibei, Monicah', 'Ndambiri, Yvonne Nyambura', 'Ndungu, Sarah Laura Wangari', "Ng'ang'a, Ian Mutuge", 'Ngeno, Alvin Kipkurui', 'Ngigi, Michael Macharia', 'Njuguna, Elizabeth Njoki', 'Nugi, Andrew Kiarie', 'Nyambura, Erica', 'Nzioki, Maureen Mutete', 'Ochanda, Steven Joel Jona', 'Ogutu, Brenda Mary Anyango', 'Ombeni, Mwenzangu Faraja', 'Ombongi, Caleb Magare', "Orony, Charis Ng'wono", 'Owens, Nicole Owens', 'Patel, Jay Hirji', 'Tonui, Martin', 'Tum, Bramwel Kipchirchir', 'Wachira, Joy Muthoni', 'Wakaba, Rosemary Njeri', 'Wanjao, Louis Mbugua', "Waweru, Monika Ng'endo", 'Waweru, Trevor Kariuki']
+2024-09-10 14:05:32,255 - INFO - Data for File_A saved in Excel, CSV, and TSV formats.
+2024-09-10 14:05:32,256 - INFO - Generating email addresses for students in File_B sheet.
+2024-09-10 14:05:32,256 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 14:05:32,257 - INFO - File_B: Number of male students: 35
+2024-09-10 14:05:32,257 - INFO - File_B: Number of female students: 24
+2024-09-10 14:05:32,258 - INFO - File_B: Students with special characters in their names: ['Adhiambo, Jane Daisy', 'Ali, Sumeiya Abdulle Abdirizak', 'Asava, Wayne Majani', 'Barasa, Michelle Nekesa', 'Bigingi, Ian Duncan', 'Cheboi, Lormotum Noel', 'Dulo, Humphrey James', 'Etemesi, Caleb Asira', 'Frances, Ayango', 'Gitau, Sandra Wanjiru', 'Hassan, Masoud Ali', 'Kabui, Michelle Miceere', 'Kamau, Edinah Nyambura', 'Kamau, Jesse Mbugua', 'Karani, Amanda Ngendo', 'Kathurima, Ryan Kinoti', 'Kennedy, Angel Venoliah', 'Kiilu, Jeff Kioko', 'Kiiru, Cynthia Everlyn Muthoni', 'Kimani, Alex Mwangi', 'Kinegeni, Terry', 'Kyalo, Felicia Mutheu', 'Leting, Sylvester Kiplagat', 'Lihanda, Glen Musa', 'Mahia, Jerome Kamau', "Mbugua, Nathan Ng'ethe", 'Mbwanga, Emmanuel Chivunira', 'Moire, Henry Nyakundi', 'Morara, Keith Matwere', 'Muchiri, Lynn Wairimu', 'Mugendi, Emmanuel Muthomi', 'Mukiri, Maryanne Wanjiku', 'Mungai, Kihanya', 'Musyoka, Brian Kioko', 'Mutende, Arabella Fanisheba', 'Mutinda, Bryan Lwaya', 'Mwago, Megan Dette', 'Mwai, David King', 'Nalugala, Venessa Chebukwa', 'Ndirangu, Denise Nyambura', 'Ngahu, David Gitonga', 'Ngari, Sifa Gathoni', 'Nguthiru, Edwin Ndiritu', 'Nyamosi, Edmond Omwega', "Nyang'or, Olive Menorah", 'Omal, Warren', 'Omondi, Emmanuel Neville', 'Omondi, Winfred Achieng', 'Otao, Davis Mokora', 'Rintaugu, Mugambi Nteere', 'Rotich, Mercy Chepngetich', 'Sehmi, Singh Jeevan', 'Vasani, Aman Upinkumar', 'Wafula, Gideon Simiyu', 'Wahu, Bridget Makena', 'Wango, Michael Mundati', 'Wangombe, Martin Mwangi', 'Wanyonyi, Brian Newton', 'Wasike, Nicole Jones Nekesa']
+2024-09-10 14:05:32,291 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
+2024-09-10 14:08:17,843 - INFO - Reading student data from Excel file.
+2024-09-10 14:08:18,546 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 14:08:18,547 - INFO - Generating email addresses for students in File_A sheet.
+2024-09-10 14:08:18,550 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 14:08:18,556 - INFO - File_A: Number of male students: 40
+2024-09-10 14:08:18,556 - INFO - File_A: Number of female students: 24
+2024-09-10 14:08:18,557 - INFO - File_A: Students with special characters in their names: ["Akong'o, Shanelle Hilda Anyango", "Ang'edu, Jude Ocomil", "Ng'ang'a, Ian Mutuge", "Orony, Charis Ng'wono", "Waweru, Monika Ng'endo"]
+2024-09-10 14:08:18,618 - INFO - Data for File_A saved in Excel, CSV, and TSV formats.
+2024-09-10 14:08:18,618 - INFO - Generating email addresses for students in File_B sheet.
+2024-09-10 14:08:18,618 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 14:08:18,620 - INFO - File_B: Number of male students: 35
+2024-09-10 14:08:18,620 - INFO - File_B: Number of female students: 24
+2024-09-10 14:08:18,621 - INFO - File_B: Students with special characters in their names: ["Mbugua, Nathan Ng'ethe", "Nyang'or, Olive Menorah"]
+2024-09-10 14:08:18,646 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
