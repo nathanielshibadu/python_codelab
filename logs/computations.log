@@ -105,3 +105,44 @@
 2024-09-10 14:08:18,620 - INFO - File_B: Number of female students: 24
 2024-09-10 14:08:18,621 - INFO - File_B: Students with special characters in their names: ["Mbugua, Nathan Ng'ethe", "Nyang'or, Olive Menorah"]
 2024-09-10 14:08:18,646 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
+2024-09-10 14:42:25,339 - INFO - Reading student data from Excel file.
+2024-09-10 14:42:26,667 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 14:42:26,667 - INFO - Processing File_A sheet.
+2024-09-10 14:42:26,672 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 14:42:26,676 - INFO - File_A: Number of male students: 40
+2024-09-10 14:42:26,677 - INFO - File_A: Number of female students: 24
+2024-09-10 14:42:26,677 - INFO - Male students list saved to data/Male_Students_File_A.txt
+2024-09-10 14:42:26,677 - INFO - Female students list saved to data/Female_Students_File_A.txt
+2024-09-10 14:42:26,678 - INFO - File_A: Students with special characters in their names: ["Akong'o, Shanelle Hilda Anyango", "Ang'edu, Jude Ocomil", "Ng'ang'a, Ian Mutuge", "Orony, Charis Ng'wono", "Waweru, Monika Ng'endo"]
+2024-09-10 14:42:26,762 - INFO - Data for File_A saved in Excel, CSV, and TSV formats.
+2024-09-10 14:42:26,762 - INFO - Processing File_B sheet.
+2024-09-10 14:42:26,763 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 14:42:26,764 - INFO - File_B: Number of male students: 35
+2024-09-10 14:42:26,764 - INFO - File_B: Number of female students: 24
+2024-09-10 14:42:26,764 - INFO - Male students list saved to data/Male_Students_File_B.txt
+2024-09-10 14:42:26,764 - INFO - Female students list saved to data/Female_Students_File_B.txt
+2024-09-10 14:42:26,765 - INFO - File_B: Students with special characters in their names: ["Mbugua, Nathan Ng'ethe", "Nyang'or, Olive Menorah"]
+2024-09-10 14:42:26,786 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
+2024-09-10 14:51:43,553 - INFO - Reading student data from Excel file.
+2024-09-10 14:51:44,396 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 14:51:44,397 - INFO - Processing File_A sheet.
+2024-09-10 14:51:44,403 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 14:51:44,409 - INFO - File_A: Number of male students: 40
+2024-09-10 14:51:44,409 - INFO - File_A: Number of female students: 24
+2024-09-10 14:51:44,409 - INFO - Male students list saved to data/Male_Students_File_A.txt
+2024-09-10 14:51:44,409 - INFO - Female students list saved to data/Female_Students_File_A.txt
+2024-09-10 14:51:44,411 - INFO - File_A: Students with special characters in their names: ["Akong'o, Shanelle Hilda Anyango", "Ang'edu, Jude Ocomil", "Ng'ang'a, Ian Mutuge", "Orony, Charis Ng'wono", "Waweru, Monika Ng'endo"]
+2024-09-10 14:51:44,555 - INFO - Data for File_A saved in Excel, CSV, and TSV formats.
+2024-09-10 14:51:44,556 - INFO - Processing File_B sheet.
+2024-09-10 14:51:44,557 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 14:51:44,559 - INFO - File_B: Number of male students: 35
+2024-09-10 14:51:44,559 - INFO - File_B: Number of female students: 24
+2024-09-10 14:51:44,559 - INFO - Male students list saved to data/Male_Students_File_B.txt
+2024-09-10 14:51:44,559 - INFO - Female students list saved to data/Female_Students_File_B.txt
+2024-09-10 14:51:44,560 - INFO - File_B: Students with special characters in their names: ["Mbugua, Nathan Ng'ethe", "Nyang'or, Olive Menorah"]
+2024-09-10 14:51:44,581 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
+2024-09-10 14:51:44,582 - INFO - Performing name similarity analysis.
+2024-09-10 14:51:44,583 - INFO - Use pytorch device_name: cpu
+2024-09-10 14:51:44,583 - INFO - Load pretrained SentenceTransformer: LaBSE
+2024-09-10 14:51:53,621 - INFO - Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.
+2024-09-10 14:51:53,623 - INFO - Number of name pairs with similarity >= 50%: 293
