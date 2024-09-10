@@ -6,7 +6,9 @@ from functions import (
     generate_emails_for_students,
     generate_gender_lists,
     find_special_characters,
-    name_similarity_analysis
+    name_similarity_analysis,
+    save_to_json,
+    save_to_jsonl
 )
 
 # Ensure the 'logs' and 'data' directories exist
@@ -20,7 +22,6 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
-
 
 def main():
     # File path for the input Excel file
@@ -94,9 +95,16 @@ def main():
         logging.info(f"Number of name pairs with similarity >= 50%: {len(similarity_results)}")
     except Exception as e:
         logging.error(f"Error during name similarity analysis: {e}")
+        return
+
+    # Save combined data to JSON and JSONL formats
+    json_output_path = 'data/Combined_Student_Data.json'
+    jsonl_output_path = 'data/Combined_Student_Data.jsonl'
+
+    save_to_json(combined_df, json_output_path)
+    save_to_jsonl(combined_df, jsonl_output_path, similarity_results)
 
     print("Processing complete. Check the logs and output files in the 'data' directory for details.")
-
 
 if __name__ == "__main__":
     main()
