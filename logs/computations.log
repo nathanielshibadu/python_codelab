@@ -146,3 +146,95 @@
 2024-09-10 14:51:44,583 - INFO - Load pretrained SentenceTransformer: LaBSE
 2024-09-10 14:51:53,621 - INFO - Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.
 2024-09-10 14:51:53,623 - INFO - Number of name pairs with similarity >= 50%: 293
+2024-09-10 15:25:18,913 - INFO - Reading student data from Excel file.
+2024-09-10 15:25:21,523 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 15:25:21,523 - INFO - Processing File_A sheet.
+2024-09-10 15:25:21,563 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 15:25:21,603 - INFO - File_A: Number of male students: 40
+2024-09-10 15:25:21,603 - INFO - File_A: Number of female students: 24
+2024-09-10 15:25:21,603 - INFO - Male students list saved to data/Male_Students_File_A.txt
+2024-09-10 15:25:21,603 - INFO - Female students list saved to data/Female_Students_File_A.txt
+2024-09-10 15:25:21,606 - INFO - File_A: Students with special characters in their names: ["Akong'o, Shanelle Hilda Anyango", "Ang'edu, Jude Ocomil", "Ng'ang'a, Ian Mutuge", "Orony, Charis Ng'wono", "Waweru, Monika Ng'endo"]
+2024-09-10 15:25:22,223 - INFO - Data for File_A saved in Excel, CSV, and TSV formats.
+2024-09-10 15:25:22,223 - INFO - Processing File_B sheet.
+2024-09-10 15:25:22,225 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 15:25:22,227 - INFO - File_B: Number of male students: 35
+2024-09-10 15:25:22,227 - INFO - File_B: Number of female students: 24
+2024-09-10 15:25:22,227 - INFO - Male students list saved to data/Male_Students_File_B.txt
+2024-09-10 15:25:22,228 - INFO - Female students list saved to data/Female_Students_File_B.txt
+2024-09-10 15:25:22,228 - INFO - File_B: Students with special characters in their names: ["Mbugua, Nathan Ng'ethe", "Nyang'or, Olive Menorah"]
+2024-09-10 15:25:22,409 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
+2024-09-10 15:25:22,410 - INFO - Performing name similarity analysis.
+2024-09-10 15:25:22,543 - INFO - Use pytorch device_name: cpu
+2024-09-10 15:25:22,544 - INFO - Load pretrained SentenceTransformer: LaBSE
+2024-09-10 15:25:48,020 - INFO - Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.
+2024-09-10 15:25:48,020 - INFO - Number of name pairs with similarity >= 50%: 293
+2024-09-10 15:28:35,012 - INFO - Reading student data from Excel file.
+2024-09-10 15:28:36,110 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 15:28:36,111 - INFO - Processing File_A sheet.
+2024-09-10 15:28:36,147 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 15:28:36,165 - INFO - File_A: Number of male students: 40
+2024-09-10 15:28:36,165 - INFO - File_A: Number of female students: 24
+2024-09-10 15:28:36,165 - INFO - Male students list saved to data/Male_Students_File_A.txt
+2024-09-10 15:28:36,165 - INFO - Female students list saved to data/Female_Students_File_A.txt
+2024-09-10 15:28:36,167 - INFO - File_A: Students with special characters in their names: ["Akong'o, Shanelle Hilda Anyango", "Ang'edu, Jude Ocomil", "Ng'ang'a, Ian Mutuge", "Orony, Charis Ng'wono", "Waweru, Monika Ng'endo"]
+2024-09-10 15:28:36,313 - INFO - Data for File_A saved in Excel, CSV, and TSV formats.
+2024-09-10 15:28:36,314 - INFO - Processing File_B sheet.
+2024-09-10 15:28:36,314 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 15:28:36,316 - INFO - File_B: Number of male students: 35
+2024-09-10 15:28:36,316 - INFO - File_B: Number of female students: 24
+2024-09-10 15:28:36,316 - INFO - Male students list saved to data/Male_Students_File_B.txt
+2024-09-10 15:28:36,316 - INFO - Female students list saved to data/Female_Students_File_B.txt
+2024-09-10 15:28:36,317 - INFO - File_B: Students with special characters in their names: ["Mbugua, Nathan Ng'ethe", "Nyang'or, Olive Menorah"]
+2024-09-10 15:28:36,344 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
+2024-09-10 15:28:36,344 - INFO - Performing name similarity analysis.
+2024-09-10 15:28:36,360 - INFO - Use pytorch device_name: cpu
+2024-09-10 15:28:36,360 - INFO - Load pretrained SentenceTransformer: LaBSE
+2024-09-10 15:28:50,139 - INFO - Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.
+2024-09-10 15:28:50,140 - INFO - Number of name pairs with similarity >= 50%: 293
+2024-09-10 15:38:03,699 - INFO - Reading student data from Excel file.
+2024-09-10 15:38:04,729 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 15:38:04,730 - INFO - Processing File_A sheet.
+2024-09-10 15:38:04,790 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 15:38:04,810 - INFO - File_A: Number of male students: 40
+2024-09-10 15:38:04,810 - INFO - File_A: Number of female students: 24
+2024-09-10 15:38:04,810 - INFO - Male students list saved to data/Male_Students_File_A.txt
+2024-09-10 15:38:04,810 - INFO - Female students list saved to data/Female_Students_File_A.txt
+2024-09-10 15:38:04,811 - INFO - File_A: Students with special characters in their names: ["Akong'o, Shanelle Hilda Anyango", "Ang'edu, Jude Ocomil", "Ng'ang'a, Ian Mutuge", "Orony, Charis Ng'wono", "Waweru, Monika Ng'endo"]
+2024-09-10 15:38:06,092 - INFO - Data for File_A saved in Excel, CSV, and TSV formats.
+2024-09-10 15:38:06,093 - INFO - Processing File_B sheet.
+2024-09-10 15:38:06,094 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 15:38:06,322 - INFO - File_B: Number of male students: 35
+2024-09-10 15:38:06,322 - INFO - File_B: Number of female students: 24
+2024-09-10 15:38:06,323 - INFO - Male students list saved to data/Male_Students_File_B.txt
+2024-09-10 15:38:06,323 - INFO - Female students list saved to data/Female_Students_File_B.txt
+2024-09-10 15:38:06,326 - INFO - File_B: Students with special characters in their names: ["Mbugua, Nathan Ng'ethe", "Nyang'or, Olive Menorah"]
+2024-09-10 15:38:06,459 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
+2024-09-10 15:38:06,460 - INFO - Performing name similarity analysis.
+2024-09-10 15:38:06,462 - INFO - Use pytorch device_name: cpu
+2024-09-10 15:38:06,462 - INFO - Load pretrained SentenceTransformer: LaBSE
+2024-09-10 15:38:20,969 - INFO - Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.
+2024-09-10 15:38:20,969 - INFO - Number of name pairs with similarity >= 50%: 293
+2024-09-10 15:40:24,216 - INFO - Reading student data from Excel file.
+2024-09-10 15:40:25,020 - INFO - Successfully read student data from File_A and File_B sheets.
+2024-09-10 15:40:25,022 - INFO - Processing File_A sheet.
+2024-09-10 15:40:25,064 - INFO - Successfully generated email addresses for students in File_A.
+2024-09-10 15:40:25,081 - INFO - File_A: Number of male students: 40
+2024-09-10 15:40:25,081 - INFO - File_A: Number of female students: 24
+2024-09-10 15:40:25,081 - INFO - Male students list saved to data/Male_Students_File_A.txt
+2024-09-10 15:40:25,081 - INFO - Female students list saved to data/Female_Students_File_A.txt
+2024-09-10 15:40:25,083 - INFO - File_A: Students with special characters in their names: ["Akong'o, Shanelle Hilda Anyango", "Ang'edu, Jude Ocomil", "Ng'ang'a, Ian Mutuge", "Orony, Charis Ng'wono", "Waweru, Monika Ng'endo"]
+2024-09-10 15:40:25,329 - INFO - Data for File_A saved in Excel, CSV, and TSV formats.
+2024-09-10 15:40:25,329 - INFO - Processing File_B sheet.
+2024-09-10 15:40:25,330 - INFO - Successfully generated email addresses for students in File_B.
+2024-09-10 15:40:25,332 - INFO - File_B: Number of male students: 35
+2024-09-10 15:40:25,332 - INFO - File_B: Number of female students: 24
+2024-09-10 15:40:25,332 - INFO - Male students list saved to data/Male_Students_File_B.txt
+2024-09-10 15:40:25,332 - INFO - Female students list saved to data/Female_Students_File_B.txt
+2024-09-10 15:40:25,333 - INFO - File_B: Students with special characters in their names: ["Mbugua, Nathan Ng'ethe", "Nyang'or, Olive Menorah"]
+2024-09-10 15:40:25,397 - INFO - Data for File_B saved in Excel, CSV, and TSV formats.
+2024-09-10 15:40:25,398 - INFO - Performing name similarity analysis.
+2024-09-10 15:40:25,428 - INFO - Use pytorch device_name: cpu
+2024-09-10 15:40:25,429 - INFO - Load pretrained SentenceTransformer: LaBSE
+2024-09-10 15:40:39,384 - INFO - Name similarity analysis complete. Results saved to 'data/name_similarity_results.json'.
+2024-09-10 15:40:39,384 - INFO - Number of name pairs with similarity >= 50%: 293

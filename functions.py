@@ -4,7 +4,6 @@ from sentence_transformers import SentenceTransformer
 from scipy.spatial.distance import cosine
 import json
 
-
 def read_student_data(file_path):
     try:
         sheet_dict = pd.read_excel(file_path, sheet_name=['File_A', 'File_B'])
@@ -13,7 +12,6 @@ def read_student_data(file_path):
         return df_file_a, df_file_b
     except Exception as e:
         raise FileNotFoundError(f"Error reading Excel file: {e}")
-
 
 def generate_email(name, existing_emails):
     # Remove special characters from the name
@@ -37,24 +35,20 @@ def generate_email(name, existing_emails):
     existing_emails.add(email)
     return email
 
-
 def generate_emails_for_students(df):
     existing_emails = set()
     df['Email Address'] = df["Student Name"].apply(lambda name: generate_email(name, existing_emails))
     return df
-
 
 def generate_gender_lists(df):
     male_students = df[df['Gender'] == 'M']['Student Name'].tolist()
     female_students = df[df['Gender'] == 'F']['Student Name'].tolist()
     return male_students, female_students
 
-
 def find_special_characters(df):
     special_char_pattern = r'[^a-zA-Z\s,]'
     special_char_students = df[df['Student Name'].str.contains(special_char_pattern)]['Student Name'].tolist()
     return special_char_students
-
 
 def name_similarity_analysis(df):
     # Initialize LaBSE model
@@ -88,3 +82,34 @@ def name_similarity_analysis(df):
         json.dump(similarity_results, f, indent=2)
 
     return similarity_results
+
+def save_to_json(df, file_path):
+    try:
+        df.to_json(file_path, orient='records', lines=False, indent=2)
+        print(f"Data saved to JSON file: {file_path}")
+    except Exception as e:
+        print(f"Error saving data to JSON: {e}")
+
+def save_to_jsonl(df, file_path, similarity_results):
+    try:
+        with open(file_path, 'w') as f:
+            for _, row in df.iterrows():
+                # Convert all data in the row to string if needed
+                json_record = {
+                    "id": str(row.name),
+                    "student_number": str(row['Student Number']),
+                    "additional_details": [
+                        {
+                            "dob": str(row['DoB']) if pd.notnull(row['DoB']) else None,
+                            "gender": row['Gender'].lower(),
+                            "special_character": ["yes" if re.search(r'[^a-zA-Z\s,]', row['Student Name']) else "no"],
+                            "name_similar": ["yes" if any(result['similarity'] >= 0.5 for result in similarity_results if
+                                                          result['male_name'] == row['Student Name'] or result['female_name'] == row['Student Name']) else "no"]
+                        }
+                    ]
+                }
+                # f.write(json.dumps(json_record) + '\n')
+                f.write(json.dumps(json_record, indent=4) + '\n')
+        print(f"Data saved to JSONL file: {file_path}")
+    except Exception as e:
+        print(f"Error saving data to JSONL: {e}")
